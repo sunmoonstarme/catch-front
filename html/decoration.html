@@ -1,0 +1,33 @@
+
+
+<div>
+<image src="./js.jpg" width="300" ></image>
+
+<h2>hahaha</h2>
+</div>
+
+<div>
+<!--剪裁路径示例-->
+<svg id="s1" width="200" height="150" style="border:1px solid #DA5961;">
+    <defs>
+        <clipPath id="clipPath1">
+            <circle cx="100" cy="60" r="50" />
+        </clipPath>
+    </defs>
+<image xlink:href="./js.jpg" width="200" clip-path="url(#clipPath1)"></image>
+</svg>
+ gogog 
+<!--蒙版示例-->
+<svg id="s2" width="200" height="150" style="border:1px solid #DA5961;">
+<defs>
+    <lineargradient id="gradient1">
+        <stop offset="0" style="stop-color:#000000" />
+        <stop offset="1" style="stop-color:#ffffff" />
+    </lineargradient>
+    <mask id="mask1">
+        <rect x="0" y="0" width="200" height="150" fill="url(#gradient1)"></rect>
+    </mask>
+</defs>
+    <image xlink:href="./js.jpg" width="200" mask="url(#mask1)"></image>
+</svg>
+</div>
