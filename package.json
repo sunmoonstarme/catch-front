@@ -1,0 +1,17 @@
+{
+  "name": "catch-front",
+  "version": "1.0.0",
+  "description": "catch up front javascript feture since 2016",
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}
